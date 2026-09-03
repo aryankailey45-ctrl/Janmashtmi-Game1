@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <meta name="theme-color" content="#120b2d" />
+  <title>Makhan Run — Janmashtami 3D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="game-shell">
+    <canvas id="game"></canvas>
+    <section id="hud" aria-label="Game status">
+      <div class="brand"><span>🪶</span> MAKHAN RUN</div>
+      <div class="stats"><span>🧈 <b id="score">0</b></span><span>🏵️ <b id="flowers">0</b></span></div>
+    </section>
+    <section id="start" class="panel">
+      <div class="flute">🪈</div>
+      <p class="eyebrow">JANMASHTAMI • 3D ENDLESS RUNNER</p>
+      <h1>Makhan Run</h1>
+      <div class="character-home">
+        <div class="avatar">🦚</div>
+        <div><strong>Krishna's Journey</strong><small>Your 3D Krishna character is ready to run through Vrindavan.</small></div>
+      </div>
+      <p>Guide Krishna through moonlit Vrindavan. Gather makhan pots, weave around carts and festival hurdles, and keep the celebration going.</p>
+      <div class="howto">
+        <span><b>1</b> Swipe left / right to change lane</span>
+        <span><b>2</b> Swipe up to jump low hurdles</span>
+        <span><b>3</b> Collect makhan pots — avoid every obstacle</span>
+      </div>
+      <button id="play">Start the celebration</button>
+      <small>Desktop: ← → and Space · Phone: swipe controls · Audio starts after Start</small>
+    </section>
+    <section id="over" class="panel hidden">
+      <p class="eyebrow">THE RUN ENDS HERE</p>
+      <h2>Wonderful run!</h2>
+      <p id="final-score">You gathered 0 makhan.</p>
+      <button id="again">Run again</button>
+    </section>
+    <div id="tip">Swipe to move • tap to begin</div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
